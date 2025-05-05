@@ -37,5 +37,5 @@ Primárně: https://www.waveshare.com/wiki/RGB-Matrix-P2.5-64x32#Working_With_Ra
 1. Nahraj CircuitPython na Raspberry Pi Pico W.
 2. Nakopíruj zdrojové soubory (`code.py` a složku `lib/`) na disk zařízení.
 3. Připoj RGB matici k Pico W podle dokumentace.
-4. Uprav soubor `settings.toml` s informacemi o WiFi (SSID, heslo).
+4. Nakonfiguruj skrze hotspot na kterou wifi se má připojit
 5. Restartuj zařízení – čas se automaticky načte a zobrazí.
