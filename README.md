@@ -1,7 +1,7 @@
 # RGB Clock
 
 Tento projekt zobrazuje aktuální čas na RGB LED matici pomocí Raspberry Pi Pico W a CircuitPythonu.  
-Hodiny jsou synchronizované přes internet a aktualizují se automaticky.
+Hodiny jsou synchronizované přes internet a aktualizují se automaticky, jednou za minutu se ukáže animace projíždějícího vlaku.
 
 ## Požadavky
 
@@ -20,6 +20,7 @@ Hodiny jsou synchronizované přes internet a aktualizují se automaticky.
 - Automatická synchronizace času přes WiFi.
 - Zobrazení hodin a minut na RGB LED matici.
 - Barevné zobrazení číslic.
+- každou minutu animace vlaku
 
 ## Poznámky
 
@@ -28,14 +29,13 @@ Hodiny jsou synchronizované přes internet a aktualizují se automaticky.
 
 ## Zprovoznění
 - Zapojte do zásuvky
-- Připojte se přes bluetooth a nakonfigurujte wifi ke které se má raspberry pi připojit
+- Připojte se přes hotspot, zadejte do prohlížeče 192.168.4.1 a nakonfigurujte wifi ke které se má raspberry pi připojit, pak se raspberry samo restartuje
 - Na displeji se zobrazí synchronizované hodiny
-- Pro pokročilejší konfiguraci (změna času, timer,...) přejděte na webovou stránku "doplnitWebStránku.cz"
 
 ## Vlastní instalace
-Primárně: https://www.waveshare.com/wiki/RGB-Matrix-P2.5-64x32#Working_With_Raspberry_Pi_Pico
-1. Nahraj CircuitPython na Raspberry Pi Pico W.
+Primárně zdroj: https://www.waveshare.com/wiki/RGB-Matrix-P2.5-64x32#Working_With_Raspberry_Pi_Pico
+1. Nahraj CircuitPython uf2 file na Raspberry Pi Pico W.
 2. Nakopíruj zdrojové soubory (`code.py` a složku `lib/`) na disk zařízení.
-3. Připoj RGB matici k Pico W podle dokumentace.
-4. Nakonfiguruj skrze hotspot na kterou wifi se má připojit
+3. Připoj RGB matici k Pico W podle dokumentace výrobce výše.
+4. Nakonfiguruj skrze hotspot (nebo do wifi.txt) na kterou wifi se má připojit
 5. Restartuj zařízení – čas se automaticky načte a zobrazí.
